@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">Student enrollment form</div>
+      <div class="subcontainer">
+        <div class="enroll">
+          <!-- <div class="subHead">Fill form to enroll</div> -->
+          <form action="javascript:void(0);" class="form">
+            <div class="name">
+              <label for="name">Name: </label>
+              <input type="text" name="name" id="NAME" maxlength="25" />
+            </div>
+            <div class="email">
+              <label for="email">E-mail: </label>
+              <input type="email" name="email" id="EMAIL" maxlength="35" />
+            </div>
+            <div class="phone">
+              <label for="phone">Contact: </label>
+              <input type="number" name="phone" id="PHONE" maxlength="10" />
+            </div>
+            <div class="website">
+              <label for="website">Website: </label>
+              <input type="url" name="website" id="WEBSITE" />
+            </div>
+            <div class="image">
+              <label for="image">Image url: </label>
+              <input type="url" name="image" id="IMAGE" />
+            </div>
+
+            <div class="gender">
+              <label for="name">Gender: </label>
+              <input type="radio" name="gender" value="male" />Male
+              <br />
+              <input type="radio" name="gender" value="female" />Female
+            </div>
+            <div class="skills">
+              <label for="skills">Skills: </label>
+              <input type="checkbox" name="skills" value="html" />HTML
+              <input type="checkbox" name="skills" value="css" />Css
+              <input type="checkbox" name="skills" value="javascript" />Js
+            </div>
+            <div class="btnHolder">
+              <button id="submit">Enroll Student</button>
+              <button type="reset" id="reset">Reset Form</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="list">
+          <div class="subHead">Enrolled student details</div>
+          <div id="detailsBody">
+            <div class="chead">
+              <span style="float: left">Description</span>
+              <span style="float: right">Image</span>
+            </div>
+            <div class="candidate">
+              <div class="desc">
+                <p>Name</p>
+                <p>Gender</p>
+                <p>Email</p>
+                <p>Phone</p>
+                <p>Url</p>
+                <p>skills</p>
+              </div>
+              <div class="stimage"></div>
+            </div>
+
+            <!-- <div class="candidate">
+              <div class="desc">
+                <p>Name</p>
+                <p>Gender</p>
+                <p>Email</p>
+                <p>Phone</p>
+                <p>Url</p>
+                <p>skills</p>
+              </div>
+              <div class="stimage"></div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
